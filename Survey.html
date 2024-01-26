@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Which Nintendo Switch game should I play?</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 class="title" id="title">Which Nintendo Switch game should I play?</h1>
+    <p class="description" id="description">Help me combat choice overload with quantitative data!</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+                <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="10"/> Blindly accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">fine print</a> you won't read?
+      </label>
+        <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="10"/> You sure?
+      </label></br>
+        <label id="name-label" for="name">Name<input id="name" name="name-label" type="text" required placeholder="William Robert Racine III"/></label>
+        <label id="email-label" for="email">Email<input id="email" name="email-label" type="email" required placeholder="BillyBobRacin3@fastcars.net"/></label>
+        <label id="number-label" for="number">Age<input id="number" name="number-label" type="number" min="0" max="150" placeholder="0-150 unless you're a robot..." required /></label>
+                        <label for="referrer">Who sent you here?
+          <select id="dropdown" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">Doug Bowser visited me in a dream.</option>
+            <option value="2">I stumbled here by accident.</option>
+            <option value="3">It's the top Google search result.</option>
+            <option value="4">Other legitimate reason...</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>CREDENTIALS</legend>
+        <label for="best-game">What's the best video game and why?
+          <textarea id="best-game" name="best-game" rows="3" cols="30" placeholder="Dragon Quest VIII because of Yangus."></textarea>
+        </label>
+                <label for="picture">Show me a picture of your this so-called "best" game.<input id="picture" type="file" name="picture" /></label>
+      </fieldset>
+      <fieldset>
+        <legend>SELECTION</legend>
+        <p>Whose game should I play?</p>
+        <label for="Nintendo-developed"><input id="Nintendo-developed" type="radio" name="maker" class="inline" checked value="3"/> Nintendo developed</label>
+        <label for="Nintendo-published"><input id="Nintendo-published" type="radio" name="maker" class="inline" value="2"/> Nintendo published</label>
+                <label for="third-party"><input id="third-party" value="1" type="radio" name="maker" class="inline" /> third-party</label>
+                </br>
+                        <p>From which genre should I choose?</p>
+        <label for="genre1"><input id="genre1" type="radio" name="genre" class="inline" checked value="0"/> educational</label>
+        <label for="genre2"><input id="genre2" type="radio" name="genre" class="inline" value="0"/> broken or ugly</label>
+        <label for="genre3"><input id="genre3" type="radio" name="genre" class="inline" value="0"/> a digital board game</label>
+                <label for="genre4"><input id="genre4" type="radio" name="genre" class="inline" value="0"/> shovelware</label>
+                        <label for="genre5"><input id="genre5" type="radio" name="genre" class="inline" value="10"/> something good</label>
+                                                <label for="genre6"><input id="genre6" type="radio" name="genre" class="inline" value="1"/> other</label>
+      </fieldset>
+        </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
